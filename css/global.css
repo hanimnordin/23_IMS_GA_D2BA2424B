@@ -43,7 +43,7 @@ header {
 
 header::before {
     content: "";
-    background-image: url(assets/images/yogurt.jpg);
+    background-image: url(https://hanimnordin.github.io/23_IMS_GA_D2BA2424B/assets/images/yogurt.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
