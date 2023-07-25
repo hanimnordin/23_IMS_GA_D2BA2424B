@@ -43,7 +43,7 @@ header {
 
 header::before {
     content: "";
-    background-image: url(/assets/images/yogurt.jpg);
+    background-image: url(assets/images/yogurt.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
