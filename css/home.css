@@ -1,0 +1,129 @@
+.content {
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+
+.info-wrapper {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
+}
+
+.info {
+    text-align: right;
+    padding: 40px 20px;
+    border-style: dashed;
+    justify-self: right;
+    height: fit-content;
+    border-color: red;
+    border-width: 2px;
+}
+
+.img-1 {
+    position: absolute;
+    left: -400px;
+    height: 100%;
+}
+
+.img-logo {
+    position: absolute;
+    bottom: 100px;
+    height: 400px;
+    width: 400px;
+    right: -300px;
+    rotate: 30deg;
+}
+
+.img-2 {
+    position: absolute;
+    bottom: 100px;
+    height: 200px;
+    width: 270px;
+    z-index: -1;
+    right: 200px;
+    rotate: 20deg;
+}
+
+.img-2>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 10px;
+}
+
+.deco>div {
+    z-index: -1;
+    position: absolute;
+    border-style: dashed;
+    border-color: white;
+    border-width: 10px;
+    height: 100px;
+    width: 100px;
+    rotate: -40deg;
+}
+
+.deco>div:first-child {
+    bottom: 10px;
+    rotate: -20deg;
+    height: 70px;
+    width: 70px;
+    border-width: 4px;
+}
+
+.deco>div:last-child {
+    bottom: 40px;
+    rotate: -50deg;
+    right: 500px;
+    height: 120px;
+    width: 120px;
+    border-width: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        margin: 5%;
+        gap: 20px;
+    }
+
+    .img-1 {
+        position: initial;
+        height: 100%;
+    }
+
+    .info-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .img-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .info-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 5%;
+        gap: 10px;
+    }
+
+    .img-1 {
+        position: initial;
+        height: 100%;
+    }
+}

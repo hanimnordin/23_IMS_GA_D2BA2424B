@@ -1,0 +1,24 @@
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.location {
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.container>.swot:first-child {
+    border-top-style: none;
+}
+
+.container>.swot {
+    border-top-style: dashed;
+    margin-top: 20px;
+    padding: 20px;
+    border-top-color: burlywood;
+}

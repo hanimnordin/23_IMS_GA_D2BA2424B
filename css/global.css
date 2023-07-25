@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;700&family=Quicksand:wght@300;400;700&display=swap');
+
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #793842;
+    overflow-x: hidden;
+}
+
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    min-height: calc(100vh/2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20px;
+}
+
+header::before {
+    content: "";
+    background-image: url(/assets/images/yogurt.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.85;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header>* {
+    font-size: 80px;
+    position: relative;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin: 0px 20%;
+    min-height: calc(100vh/1.2);
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.page-title {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    background-color: #333;
+    color: white;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: dashed;
+    font-size: 23px;
+}
+
+.container {
+    color: white;
+    padding: 20px 10px;
+    min-height: 250px;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header>h1 {
+        margin-bottom: 0px;
+    }
+
+    .content {
+        margin: 0px 5%;
+    }
+}
+
+@media screen and (max-width: 1080px) {}
